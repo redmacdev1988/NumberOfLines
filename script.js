@@ -27,9 +27,9 @@ $(document).ready(function() {
   }
 
   DblLineWithEllipsis.prototype.calculateWidthOfSpace = function() {
-    var a = this._textWidthFunc('a', this._font, this._fontSize);
-    var a_space_a = this._textWidthFunc('a a', this._font, this._fontSize);
-    return a_space_a - (2 * a);
+    var l = this._textWidthFunc('l', this._font, this._fontSize);
+    var l_space_l = this._textWidthFunc('l l', this._font, this._fontSize);
+    return l_space_l - (2 * l);
   }
   
   DblLineWithEllipsis.prototype.getCharWidth = function (str, widthOfSpace, callback) {
